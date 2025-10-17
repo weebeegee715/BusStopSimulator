@@ -4,7 +4,7 @@
 # name of the character.
 
 define p = Character("Pusheen", color="#ebbce3")
-define m= Character("Man", color="#1a969d")
+define m= Character("Man", color="#bf2626")
 
 # The game starts here.
 
@@ -14,14 +14,13 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg sky at center
+    scene bg sky
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show pusheen typing at left
-    with moveinleft
+    show pusheen typing with moveinleft
 
     # These display lines of dialogue.
 
@@ -42,9 +41,10 @@ label start:
     p "Isnt it weird that we're floating??"
 
     scene bg flower
-
-    show pusheen flower
     with dissolve
+
+    show pusheen flower at right
+    with moveinright
 
     p "This is much better, right?"
 
@@ -60,6 +60,10 @@ label start:
     p "I am NOT paying my taxes LOL!!!"
 
     m "Nahh ur going to jail..."
+
+    show pusheen angry 
+
+    p " YOU CAN'T TAKE ME IM A SOVERIGN CITIZEN!!"
     # This ends the game.
 
     return
