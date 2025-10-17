@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define v = Character("Val")
+define p = Character("Pusheen")
 
 
 # The game starts here.
@@ -14,19 +14,21 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg rainbow
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show pusheen typing
 
     # These display lines of dialogue.
 
-    v "Im really trying to make a game"
+    p "Im really trying to make a game"
 
-    v "isnt that cool?"
+    p "isnt that cool?"
+
+    p "It's good to always try new things!"
 
     # This ends the game.
 
